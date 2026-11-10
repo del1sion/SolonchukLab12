@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Команди Git</title><link rel="stylesheet" href="styles.css"></head>
+<body><header><h1>Мій особистий блог</h1><p class="subtitle">Довідник основних команд Git</p></header>
+<nav><a href="SolonchukLab11-1.htm">Головна</a><a href="SolonchukLab11-2.htm">Технології</a><a href="SolonchukLab11-3.htm">Матеріали</a><a href="register.html">Реєстрація</a><a href="git_commands.html">Git-команди</a></nav>
+<main><h2>Основні команди Git</h2><div class="command-grid">
+<section class="card"><h2>Створення репозиторію</h2><p>Створити репозиторій у поточному каталозі:</p><pre>git init</pre><p>Клонувати віддалений репозиторій:</p><pre>git clone my_url</pre></section>
+<section class="card"><h2>Перегляд стану</h2><p>Показати стан файлів:</p><pre>git status</pre><p>Переглянути зміни:</p><pre>git diff</pre><p>Показати історію комітів:</p><pre>git log</pre></section>
+<section class="card"><h2>Робота з гілками</h2><p>Показати гілки:</p><pre>git branch</pre><p>Показати локальні та віддалені гілки:</p><pre>git branch -av</pre><p>Перейти на гілку:</p><pre>git checkout my_branch</pre><p>Створити гілку:</p><pre>git branch new_branch</pre><p>Об’єднати гілку:</p><pre>git merge branch_a</pre></section>
+<section class="card"><h2>Підготовка та коміт</h2><p>Додати файл до індексу:</p><pre>git add [file]</pre><p>Додати всі зміни:</p><pre>git add .</pre><p>Створити коміт:</p><pre>git commit -m "commit message"</pre></section>
+<section class="card"><h2>Скасування змін</h2><p>Прибрати файл з індексу:</p><pre>git reset [file]</pre><p>Повернутися до останнього коміту:</p><pre>git reset --hard</pre></section>
+<section class="card"><h2>Синхронізація</h2><p>Отримати зміни з сервера:</p><pre>git fetch</pre><p>Отримати та об’єднати зміни:</p><pre>git pull</pre><p>Надіслати локальні коміти:</p><pre>git push</pre></section>
+</div></main><footer>Лабораторна робота №12 — система контролю версій Git</footer></body></html>
