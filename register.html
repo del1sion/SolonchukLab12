@@ -1,16 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="uk">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Реєстрація користувача</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Реєстрація користувача</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-<header><h1>Мій особистий блог</h1><p class="subtitle">Навчальний сайт про 3D-друк</p></header>
-<nav><a href="SolonchukLab11-1.htm">Головна</a><a href="SolonchukLab11-2.htm">Технології</a><a href="SolonchukLab11-3.htm">Матеріали</a><a href="register.html">Реєстрація</a><a href="git_commands.html">Git-команди</a></nav>
-<main class="form-main"><form class="register-form" action="#" method="get">
-<h2>Реєстрація користувача</h2>
-<label for="surname">Прізвище</label><input id="surname" name="surname" type="text" placeholder="Введіть прізвище" required>
-<label for="name">Ім’я</label><input id="name" name="name" type="text" placeholder="Введіть ім’я" required>
-<label for="login">Логін</label><input id="login" name="login" type="text" placeholder="Придумайте логін" required>
-<label for="group">Навчальна група</label><select id="group" name="group" required><option value="281">281</option><option value="101">101</option><option value="102">102</option><option value="103">103</option></select>
-<label for="password">Пароль</label><input id="password" name="password" type="password" required>
-<label for="confirm">Підтвердження паролю</label><input id="confirm" name="confirm" type="password" required>
-<button type="submit">Зареєструватись</button>
-</form></main><footer>© Всі права захищені.</footer></body></html>
+
+    <!-- Шапка сайту -->
+    <header>
+        <h1>Мій особистий блог</h1>
+        <p class="subtitle">Навчальний сайт про 3D-друк</p>
+    </header>
+
+    <!-- Навігаційне меню -->
+    <nav>
+        <a href="SolonchukLab11-1.htm">Головна</a>
+        <a href="SolonchukLab11-2.htm">Технології</a>
+        <a href="SolonchukLab11-3.htm">Матеріали</a>
+        <a href="register.html">Реєстрація</a>
+    </nav>
+
+    <!-- Основний вміст сторінки -->
+    <main class="form-main">
+
+        <form class="register-form" action="#" method="get">
+
+            <h2>Реєстрація користувача</h2>
+
+            <!-- Прізвище -->
+            <label for="surname">Прізвище</label>
+            <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Введіть прізвище"
+                required
+            >
+
+            <!-- Ім'я -->
+            <label for="name">Ім'я</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введіть ім'я"
+                required
+            >
+
+            <!-- Логін -->
+            <label for="login">Логін</label>
+            <input
+                type="text"
+                id="login"
+                name="login"
+                placeholder="Придумайте логін"
+                required
+            >
+
+            <!-- Навчальна група -->
+            <label for="group">Навчальна група</label>
+            <select id="group" name="group" required>
+                <option value="281">281</option>
+                <option value="101">101</option>
+                <option value="102">102</option>
+                <option value="103">103</option>
+            </select>
+
+            <!-- Пароль -->
+            <label for="password">Пароль</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+            >
+
+            <!-- Підтвердження пароля -->
+            <label for="confirm">Підтвердження паролю</label>
+            <input
+                type="password"
+                id="confirm"
+                name="confirm"
+                required
+            >
+
+            <!-- Кнопка реєстрації -->
+            <button type="submit">
+                Зареєструватись
+            </button>
+
+        </form>
+
+    </main>
+
+    <!-- Нижня частина сайту -->
+    <footer>
+        <p>© Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
