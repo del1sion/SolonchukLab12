@@ -1,21 +1,259 @@
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;font:italic 17px/1.65 Arial,sans-serif;color:#203047;background:#eef5fa url('images/background.svg') repeat fixed}
-header,footer{background:rgba(255,255,255,.93);padding:22px 5%;text-align:center}
-header{border-bottom:3px solid #36a6c9}
-h1{margin:0;color:#087da5;font:bold normal 30px Arial;text-align:center}
-.subtitle{text-align:center;text-indent:0;color:#53677d}
-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;padding:14px;background:#dceef6}
-nav a{padding:8px 15px;background:white;border:1px solid #b8d9e8;border-radius:9px;text-decoration:none;font-style:normal;font-weight:bold}
-a:link{color:green} a:active{color:blue} a:visited{color:darkblue} a:hover{color:red;text-decoration:underline}
-main{width:90%;max-width:1000px;margin:26px auto;padding:26px;background:rgba(255,255,255,.95);border:1px solid #d5e4ee;border-radius:16px}
-h2{color:#176b91;font-style:normal}
-p{text-align:justify;text-indent:30px;margin-left:5%;margin-right:5%}
-.figure{display:block;width:min(560px,90%);max-height:300px;object-fit:contain;margin:20px auto;padding:12px;background:#f2f8fc;border:1px solid #d7e8f1;border-radius:12px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:22px 2%}
-.card{padding:16px;background:#f3f9fc;border:1px solid #d8e8f0;border-radius:12px}
-.card p{margin:8px 0 0;text-indent:22px}
-ul{margin-left:7%;margin-right:5%}
-footer{border-top:1px solid #cbdde8;font-size:14px;font-style:normal;color:#52677a}
-@media(max-width:600px){main{width:94%;padding:17px}h1{font-size:24px}body{font-size:16px}}
-/* Стилі лабораторної роботи №12 */
-.form-main{display:flex;justify-content:center;align-items:flex-start}.register-form{width:min(100%,430px);border:1px solid #cbdde8;background:#fff;padding:0 22px 22px;border-radius:8px;box-shadow:0 4px 14px #20304718}.register-form h2{margin:0 -22px 18px;padding:12px;text-align:center;background:#36a6e0;color:white;font-size:20px}.register-form label{display:block;margin:12px 0 5px;font-style:normal;font-size:14px}.register-form input,.register-form select{width:100%;padding:10px;border:1px solid #cbd4dc;border-radius:4px;font:15px Arial}.register-form button{display:block;margin:18px 0 0 auto;padding:10px 16px;border:1px solid #9aa8b2;border-radius:4px;background:#e8edf1;cursor:pointer}.register-form button:hover{background:#d4eaf5}.command-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.command-grid .card h2{font-size:19px;margin-top:0}.command-grid .card p{text-indent:0;margin:8px 0;text-align:left}.command-grid pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0 12px;padding:9px;background:#e9f1f6;border-radius:6px;color:#173c54;font:14px Consolas,monospace}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.65;
+    color: #203047;
+    background-color: #eef5fa;
+}
+
+
+header {
+    background-color: #368ae9;
+    padding: 22px 5%;
+    text-align: center;
+    border-bottom: 3px solid #36a6e9;
+}
+
+h1 {
+    margin: 0;
+    color: #087da5;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    text-indent: 0;
+    color: #53677d;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px;
+    background-color: #dceef6;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: white;
+    border: 1px solid #d8d9e8;
+    border-radius: 9px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:active {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 26px auto;
+    padding: 26px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #d5e4ee;
+    border-radius: 16px;
+}
+
+h2 {
+    color: #176b91;
+    font-style: normal;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+
+.figure {
+    display: block;
+    width: min(560px, 90%);
+    max-height: 300px;
+    object-fit: contain;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #f2f8fc;
+    border: 1px solid #d7e8f1;
+    border-radius: 12px;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(210px, 1fr)
+    );
+    gap: 16px;
+    margin: 22px 2%;
+}
+
+.card {
+    padding: 16px;
+    background-color: #f3f9fc;
+    border: 1px solid #d8e8f0;
+    border-radius: 12px;
+}
+
+.card p {
+    margin: 8px 0;
+    text-indent: 22px;
+}
+
+
+ul {
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+/* ==================================
+   Форма реєстрації
+================================== */
+
+.form-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.register-form {
+    width: min(100%, 430px);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #cbdde8;
+    border-radius: 8px;
+    font-style: normal;
+}
+
+.register-form h2 {
+    margin: -20px -20px 20px;
+    padding: 12px;
+    background-color: #368ae9;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.register-form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+    outline: 2px solid #368ae9;
+    border-color: #368ae9;
+}
+
+.register-form button {
+    display: block;
+    margin: 20px 0 0 auto;
+    padding: 10px 18px;
+    background-color: #368ae9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #176b91;
+}
+
+/* ==================================
+   Підвал сайту
+================================== */
+
+footer {
+    padding: 20px;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #cbdde8;
+    font-size: 14px;
+    font-style: normal;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    text-indent: 0;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    main {
+        width: 94%;
+        padding: 17px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
